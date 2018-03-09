@@ -1,0 +1,183 @@
+
+body {
+    background-image: url(../img/rj.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+body,
+html {
+    width: 100%;
+    min-height: 100%;
+    font-family: "Lato";
+    color: white;
+}
+h1 {
+	font-weight: 700;
+	font-size: 5em;
+}
+.content{
+	padding-top: 26vh;
+  /* padding-bottom: 13%; */
+	text-align: center;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+                 0px 8px 13px rgba(0,0,0,0.1),
+                 0px 18px 23px rgba(0,0,0,0.1);
+}
+#formContainer {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  height: 700px;
+  margin-bottom: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 80%;
+  max-width: 90% !important;
+  /* padding-bottom: 13%; */
+	text-align: center;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+                 0px 8px 13px rgba(0,0,0,0.1),
+                 0px 18px 23px rgba(0,0,0,0.1);
+}
+#containerForm {
+  background-color: #a3acba;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 80vw;
+  max-width: 90vw;
+  margin-top: 5%;
+  margin-bottom: 2%;
+  /* padding-bottom: 13%; */
+	text-align: center;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+                 0px 8px 13px rgba(0,0,0,0.1),
+                 0px 18px 23px rgba(0,0,0,0.1);
+    box-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+    0px 8px 13px rgba(0,0,0,0.1),
+    0px 18px 23px rgba(0,0,0,0.1);
+    overflow-x: hidden;
+}
+#containerForm::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+	border-radius: 10px;
+}
+
+#containerForm::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #a3acba;
+}
+
+#containerForm::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	background-image: -webkit-gradient(linear,
+									   left bottom,
+									   left top,
+									   color-stop(0.44, rgb(122,153,217)),
+									   color-stop(0.72, rgb(73,125,189)),
+									   color-stop(0.86, rgb(28,58,148)));
+}
+
+.small{
+  color:white;
+  display:block;
+}
+
+#email {
+  text-align: center;
+  text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+  0px 8px 13px rgba(0,0,0,0.1),
+  0px 18px 23px rgba(0,0,0,0.1);
+  font-size: 14px;
+}
+.form-group {
+  max-width: 70vw !important;
+  margin: 0 auto;
+}
+label {
+  max-width: 70vw;
+}
+
+
+#emailHelp {
+  color: white !important;
+}
+.carousel-control-next {
+  background-color:black;
+}
+.carousel-control-prev {
+  background-color: black;
+}
+
+hr {
+    width: 80%;
+    border-top: 1px solid #f8f8f8;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+hr.style-seven { overflow: visible; /* For IE */ height: 30px; border-style: solid; border-color: white; border-width: 1px 0 0 0; border-radius: 20px; } hr.style-seven:before { /* Not really supposed to work, but does */ display: block; content: ""; height: 30px; margin-top: -31px; border-style: solid; border-color: white; border-width: 0 0 1px 0; border-radius: 20px; }
+#carouselExampleIndicators{
+  margin-bottom: 0px;
+}
+#navbar1 {
+  box-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+               0px 8px 13px rgba(0,0,0,0.1),
+               0px 18px 23px rgba(0,0,0,0.1);
+  background-color: #7894c1 !important;
+}
+#hugo {
+  /* padding-right: 60%; */
+  margin-left: 10px;
+}
+
+.navbar-text {
+  text-align: center;
+  padding-right: 10px;
+  color:white !important;
+}
+.pre-scrollable {
+  height: 70vh !important;
+  max-height: 70vh !important;
+}
+#h1censo {
+  text-align: center;
+  padding-top: 50px;
+  margin-bottom: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+               0px 8px 13px rgba(0,0,0,0.1),
+               0px 18px 23px rgba(0,0,0,0.1);
+}
+#buttonPrim {
+  border-radius: 5px;
+  background-color: #76a8f7;
+  border: 1px solid #76a8f7;
+  margin-bottom: 10px;
+  box-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+               0px 8px 13px rgba(0,0,0,0.1),
+               0px 18px 23px rgba(0,0,0,0.1);
+}
+
+.sobreContent {
+  margin: 40px auto;
+  padding: 10px;
+  background-color: #7894c1;
+  border: 1px solid black;
+  border-radius: 15px;
+  text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+  0px 8px 13px rgba(0,0,0,0.1),
+  0px 18px 23px rgba(0,0,0,0.1);
+  box-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+  0px 8px 13px rgba(0,0,0,0.1),
+  0px 18px 23px rgba(0,0,0,0.1);
+}
+.sobreContent h1 {
+  text-align: center;
+}
