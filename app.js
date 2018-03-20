@@ -17,7 +17,7 @@ var formRoutes = require('./routes/form');
 
 // Express Sessions Setup
 app.use(require('express-session')({
-  secret: keys.session.secret,
+  secret: ENV['sessionSec'],
   resave: false,
   saveUninitialized: false
 }));
@@ -29,8 +29,8 @@ app.use(flash());
 
 passport.use(new GoogleStrategy({
   callbackURL: "/auth/google/redirect",
-  clientID: keys.google.clientID,
-  clientSecret: keys.google.clientSecret
+  clientID: ENV['gClientId'],
+  clientSecret: ENV['gClientSecret']
 }, (accessToken, refreshToken, profile, done) => {
   User.findOne({googleId: profile.id}).then((currentUser) => {
     if(currentUser){
@@ -49,8 +49,8 @@ passport.use(new GoogleStrategy({
 })
 )
 passport.use(new FacebookStrategy({
-    clientID: keys.facebook.clientID,
-    clientSecret: keys.facebook.clientSecret,
+    clientID: ENV['faceClientId'],
+    clientSecret: ENV['faceClientSecret'],
     callbackURL: "/auth/facebook/callback"
   },
   function(accessToken, refreshToken, profile, cb) {
