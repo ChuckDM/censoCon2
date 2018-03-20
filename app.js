@@ -28,7 +28,7 @@ app.use(flash());
 
 passport.use(new GoogleStrategy({
   callbackURL: "/auth/google/redirect",
-  clientID: process.env.gClientId,
+  clientID: process.env.gClientID,
   clientSecret: process.env.gClientSecret
 }, (accessToken, refreshToken, profile, done) => {
   User.findOne({googleId: profile.id}).then((currentUser) => {
@@ -48,8 +48,8 @@ passport.use(new GoogleStrategy({
 })
 )
 passport.use(new FacebookStrategy({
-    clientID: ENV['faceClientId'],
-    clientSecret: ENV['faceClientSecret'],
+    clientID: process.env.faceClientId,
+    clientSecret: process.env.faceClientSecret,
     callbackURL: "/auth/facebook/callback"
   },
   function(accessToken, refreshToken, profile, cb) {
