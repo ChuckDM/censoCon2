@@ -64,7 +64,7 @@ passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
 
 //Mongoose Connect
-mongoose.connect('process.env.DATABASE_URL');
+mongoose.connect(process.env.DATABASE_URL);
 
 //View Engine and Static Folder
 app.set('view engine', 'ejs');
