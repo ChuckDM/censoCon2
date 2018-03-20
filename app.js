@@ -16,7 +16,7 @@ var formRoutes = require('./routes/form');
 
 // Express Sessions Setup
 app.use(require('express-session')({
-  secret: ENV['sessionSec'],
+  secret: process.env.sessionSec,
   resave: false,
   saveUninitialized: false
 }));
@@ -28,8 +28,8 @@ app.use(flash());
 
 passport.use(new GoogleStrategy({
   callbackURL: "/auth/google/redirect",
-  clientID: ENV['gClientId'],
-  clientSecret: ENV['gClientSecret']
+  clientID: process.env.gClientId,
+  clientSecret: process.env.gClientSecret
 }, (accessToken, refreshToken, profile, done) => {
   User.findOne({googleId: profile.id}).then((currentUser) => {
     if(currentUser){
