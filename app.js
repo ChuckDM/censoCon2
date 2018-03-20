@@ -7,7 +7,6 @@ var passport = require('passport');
 var LocalStrategy = require('passport-local');
 var User = require('./models/user');
 var GoogleStrategy = require('passport-google-oauth20').Strategy;
-var keys = require("./keys.js")
 var FacebookStrategy = require('passport-facebook').Strategy;
 var flash = require('connect-flash');
 
