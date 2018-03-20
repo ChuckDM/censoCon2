@@ -31,147 +31,175 @@
 <div class="container pre-scrollable" id="containerForm">
     <div class="row">
         <div class="col-lg-12">
-          <form action="/form" method="POST" name="mainForm">
+          <form action="/form" method="POST" name="mainForm" class="needs-validation" novalidate>
             <div class="form-group">
               <label for="exampleFormControlSelect1">Capitulo</label>
               <select class="form-control" id="exampleFormControlSelect1" name="form[capitulo]" required>
-                <option>Escolha Seu Capítulo</option>
-                <option value="2">2 - BARRA MANSA</option>
-                <option value="5">5 - VOLTA REDONDA - WILTON CUNHA</option>
-                <option value="25">25 - GRANDE RIO</option>
-                <option value="27">27 - GUY D'AUVERGNIE</option>
-                <option value="52">52 - NOVA IGUACU</option>
-                <option value="57">57 - OBREIROS DO SÉCULO XXI</option>
-                <option value="109">109 - FRANCIS McCORMICK - CABO FRIO</option>
-                <option value="129">129 - CIDADE DE NITEROI</option>
-                <option value="134">134 - AGULHAS NEGRAS</option>
-                <option value="138">138 - NOVA FRIBURGO</option>
-                <option value="149">149 - KLEBER ALVES RAYOL</option>
-                <option value="152">152 - WILTON CUNHA O PORTAL DA LUZ</option>
-                <option value="209">209 - GONÇALENSE</option>
-                <option value="221">221 - TRES RIOS</option>
-                <option value="222">222 - CIDADE DE MIGUEL PEREIRA</option>
-                <option value="229">229 - DUQUE DE CAXIAS</option>
-                <option value="249">249 - OBREIROS DE IRAJÁ</option>
-                <option value="253">253 - SÃO JOÃO</option>
-                <option value="257">257 - FRANK SHERMAN LAND</option>
-                <option value="270">270 - LOUIS GORDON LOWER</option>
-                <option value="274">274 - G M MOACYR ARBEX DINAMARCO</option>
-                <option value="303">303 - GEOFFROY DE CHARNAY</option>
-                <option value="404">404 - LUZ DO UNIVERSO</option>
-                <option value="407">407 - NELL LAND</option>
-                <option value="436">436 - AMOR E UNIÃO</option>
-                <option value="453">453 - MACAÉ</option>
-                <option value="470">470 - IMPERIAL DE PETROPOLIS</option>
-                <option value="497">497 - WALT DISNEY</option>
-                <option value="518">518 - ITAPERUNA - MELVIN JONES</option>
-                <option value="552">552 - SUL PARAIBANO</option>
-                <option value="565">565 - LUZ DA COSTA VERDE</option>
-                <option value="568">568 - AVALON</option>
-                <option value="627">627 - SEROPEDICA</option>
-                <option value="655">655 - MARCOS FÁZIO CORRÊA</option>
-                <option value="713">713 - CAV. DO HORIZONTE DE SAQUAREMA</option>
-                <option value="722">722 - ALBERTO MANSUR</option>
-                <option value="740">740 - BARÃO DE MAUÁ</option>
-                <option value="746">746 - NILTON SIMÕES DE ARAÚJO</option>
-                <option value="756">756 - FRATERNIDADE NOROESTE FLUMINENSE</option>
-                <option value="772">772 - VALENCA - VISCONDE DO RIO PRETO</option>
-                <option value="777">777 - DOMINGOS CÂNDIDO PELEGRINO</option>
-                <option value="781">781 - CAIO MARTINS</option>
-                <option value="782">782 - AUXÍLIO À VIRTUDE</option>
-                <option value="807">807 - CONSELHEIRO MACEDO SOARES</option>
-                <option value="814">814 - LOUIS CLAUDE DE SAINT MARTIN</option>
+                <option disabled selected="selected">Escolha Seu Capítulo</option>
+                <option value="2" required>2 - BARRA MANSA</option>
+                <option value="5" required>5 - VOLTA REDONDA - WILTON CUNHA</option>
+                <option value="25" required>25 - GRANDE RIO</option>
+                <option value="27" required>27 - GUY D'AUVERGNIE</option>
+                <option value="52" required>52 - NOVA IGUACU</option>
+                <option value="57" required>57 - OBREIROS DO SÉCULO XXI</option>
+                <option value="109" required>109 - FRANCIS McCORMICK - CABO FRIO</option>
+                <option value="129" required>129 - CIDADE DE NITEROI</option>
+                <option value="134" required>134 - AGULHAS NEGRAS</option>
+                <option value="138" required>138 - NOVA FRIBURGO</option>
+                <option value="149" required>149 - KLEBER ALVES RAYOL</option>
+                <option value="152" required>152 - WILTON CUNHA O PORTAL DA LUZ</option>
+                <option value="209" required>209 - GONÇALENSE</option>
+                <option value="221" required>221 - TRES RIOS</option>
+                <option value="222" required>222 - CIDADE DE MIGUEL PEREIRA</option>
+                <option value="229" required>229 - DUQUE DE CAXIAS</option>
+                <option value="249" required>249 - OBREIROS DE IRAJÁ</option>
+                <option value="253" required>253 - SÃO JOÃO</option>
+                <option value="257" required>257 - FRANK SHERMAN LAND</option>
+                <option value="270" required>270 - LOUIS GORDON LOWER</option>
+                <option value="274" required>274 - G M MOACYR ARBEX DINAMARCO</option>
+                <option value="303" required>303 - GEOFFROY DE CHARNAY</option>
+                <option value="404" required>404 - LUZ DO UNIVERSO</option>
+                <option value="407" required>407 - NELL LAND</option>
+                <option value="436" required>436 - AMOR E UNIÃO</option>
+                <option value="453" required>453 - MACAÉ</option>
+                <option value="470" required>470 - IMPERIAL DE PETROPOLIS</option>
+                <option value="497" required>497 - WALT DISNEY</option>
+                <option value="518" required>518 - ITAPERUNA - MELVIN JONES</option>
+                <option value="552" required>552 - SUL PARAIBANO</option>
+                <option value="565" required>565 - LUZ DA COSTA VERDE</option>
+                <option value="568" required>568 - AVALON</option>
+                <option value="627" required>627 - SEROPEDICA</option>
+                <option value="655" required>655 - MARCOS FÁZIO CORRÊA</option>
+                <option value="713" required>713 - CAV. DO HORIZONTE DE SAQUAREMA</option>
+                <option value="722" required>722 - ALBERTO MANSUR</option>
+                <option value="740" required>740 - BARÃO DE MAUÁ</option>
+                <option value="746" required>746 - NILTON SIMÕES DE ARAÚJO</option>
+                <option value="756" required>756 - FRATERNIDADE NOROESTE FLUMINENSE</option>
+                <option value="772" required>772 - VALENCA - VISCONDE DO RIO PRETO</option>
+                <option value="777" required>777 - DOMINGOS CÂNDIDO PELEGRINO</option>
+                <option value="781" required>781 - CAIO MARTINS</option>
+                <option value="782" required>782 - AUXÍLIO À VIRTUDE</option>
+                <option value="807" required>807 - CONSELHEIRO MACEDO SOARES</option>
+                <option value="814" required>814 - LOUIS CLAUDE DE SAINT MARTIN</option>
               </select>
             </div>
           <hr>
             <div class="form-group">
               <label for="cidade">Cidade</label>
-              <input type="text" class="form-control"  placeholder="Cidade" name="form[cidade]">
+              <input type="text" class="form-control"  placeholder="Cidade" name="form[cidade]" required>
+              <div class="invalid-feedback">
+                Por Favor preencha uma cidade!
             </div>
+            </div>
+
           <hr>
             <div class="form-group">
               <label for="nomeloja">Nome da Loja Patrocinadora</label>
-              <input type="text" class="form-control" laceholder="A.R.L.S" name="form[loja]">
+              <input type="text" class="form-control" laceholder="A.R.L.S" name="form[loja]" required>
+              <div class="invalid-feedback">
+                Por Favor preencha uma Loja!
+            </div>
             </div>
           <hr>
             <div class="form-group">
               <label for="dados">Dados Para Contato</label>
               <small class="small" id="emailHelp" class="form-text text-muted">MC,1C,2C e PCC</small>
-              <textarea class="form-control" rows="3" placeholder="Nome, Telefone, Email" name="form[dados]"></textarea>
+              <textarea class="form-control" rows="3" placeholder="Nome, Telefone, Email" name="form[dados]" required></textarea>
+              <div class="invalid-feedback">
+                Por Favor preencha os dados!
+            </div>
             </div>
           <hr>
             <div class="form-group">
               <label for="endereco">Endereço do Capítulo</label>
               <small class="small" id="emailHelp" class="form-text text-muted">Com CEP</small>
-              <input type="text" class="form-control" placeholder="Endereço" name="form[endereco]">
+              <input type="text" class="form-control" placeholder="Endereço" name="form[endereco]" required>
+              <div class="invalid-feedback">
+                Por Favor preencha um endereço!
+            </div>
             </div>
           <hr>
+          <div class="form-group">
             <label for="exampleRadios">O capítulo usa seu email "@demolay.org.br"?</label>
               <div class="form-check">
-                  <input class="form-check-input" type="radio" name="form[email]" id="email1" value="sim" >
+                  <input class="form-check-input" type="radio" name="form[email]" id="email1" value="sim" required>
                   <label class="form-check-label" for="email1">
                     Sim
                   </label>
               </div>
               <div class="form-check">
-                  <input class="form-check-input" type="radio" name="form[email]" id="email2" value="nao" >
+                  <input class="form-check-input" type="radio" name="form[email]" id="email2" value="nao" required>
                   <label class="form-check-label" for="email2">
                     Não
                   </label>
+                  <div class="invalid-feedback">
+                    Por Favor preencha uma resposta!
+                </div>
               </div>
+
+          </div>
             <hr>
                 <div class="form-group">
                   <label for="exampleInputPassword1">Página/Perfil do Capítulo no Facebook</label>
-                  <input type="text" class="form-control" id="pagina" placeholder="Pagina/Perfil" name="form[pagina">
+                  <input type="text" class="form-control" id="pagina" placeholder="Pagina/Perfil" name="form[pagina" required>
+                  <div class="invalid-feedback">
+                    Por Favor preencha uma resposta!
+                </div>
                 </div>
               <hr>
+              <div class="form-group">
                 <label for="form-check-label">Os DeMolays costumam acessar o grupo no Facebook do Grande Capítulo e do Supremo Conselho?</label>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="form[grupo]" id="grupo1" value="sim, ambos" >
+                    <input class="form-check-input" type="radio" name="form[grupo]" id="grupo1" value="sim, ambos" required>
+                    <div class="invalid-feedback">
+                      Por Favor preencha uma resposta!
+                  </div>
                     <label class="form-check-label" for="grupo1">
                       Sim, ambos os sites
                     </label>
+
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="form[grupo]" id="grupo2" value="Apenas SCODB" >
+                    <input class="form-check-input" type="radio" name="form[grupo]" id="grupo2" value="Apenas SCODB" required>
                     <label class="form-check-label" for="grupo2">
                       Apenas o do SCODB
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="form[grupo]" id="grupo3" value="Apenas GCE" >
+                    <input class="form-check-input" type="radio" name="form[grupo]" id="grupo3" value="Apenas GCE" required>
                     <label class="form-check-label" for="grupo3">
                       Apenas o do GCE-RJ
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="form[grupo]" id="grupo4" value="Nao costumam" >
+                    <input class="form-check-input" type="radio" name="form[grupo]" id="grupo4" value="Nao costumam" required>
                     <label class="form-check-label" for="grupo4">
                       Não costumam
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="form[grupo]" id="grupo5" value="Nao conhecem" >
+                    <input class="form-check-input" type="radio" name="form[grupo]" id="grupo5" value="Nao conhecem" required>
                     <label class="form-check-label" for="grupo5">
                       Não conhecem
                     </label>
                 </div>
+              </div>
               <hr>
                 <label for="form-check-label">O Capítulo se reune na sede da(s) Loja(s) Patrocinadora(s)</label>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="form[sede]" id="sede1" value="Sim, sempre" >
+                    <input class="form-check-input" type="radio" name="form[sede]" id="sede1" value="Sim, sempre" required>
                     <label class="form-check-label" for="sede1">
                       Sim, sempre
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="form[sede]" id="sede2" value="Sim, as vezes" >
+                    <input class="form-check-input" type="radio" name="form[sede]" id="sede2" value="Sim, as vezes" required>
                     <label class="form-check-label" for="sede2">
                       Sim, ás vezes
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="form[sede]" id="sede3" value="Nunca" >
+                    <input class="form-check-input" type="radio" name="form[sede]" id="sede3" value="Nunca" required>
                     <label class="form-check-label" for="sede3">
                     Nunca
                     </label>
@@ -179,31 +207,31 @@
               <hr>
                 <label for="form-check-label">Como é a relação do Capítulo com a(s) Loja(s) Patrocinadora(s)</label>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="form[relacao]" id="relacao1" value="Otima" >
+                    <input class="form-check-input" type="radio" name="form[relacao]" id="relacao1" value="Otima" required>
                     <label class="form-check-label" for="relacao1">
                       Ótima, estamos sempre em contato e participamos de eventos e filantropias em conjunto
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="form[relacao]" id="relacao2" value="Boa" >
+                    <input class="form-check-input" type="radio" name="form[relacao]" id="relacao2" value="Boa" required>
                     <label class="form-check-label" for="relacao2">
                       Boa, mantemos muito contato, apesar de não trabalharmos juntos em projetos
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="form[relacao]" id="relacao3" value="Mediana" >
+                    <input class="form-check-input" type="radio" name="form[relacao]" id="relacao3" value="Mediana" required>
                     <label class="form-check-label" for="relacao3">
                     Mediana, conversamos com eles quando necessário
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="form[relacao]" id="relacao4" value="Ruim" >
+                    <input class="form-check-input" type="radio" name="form[relacao]" id="relacao4" value="Ruim" required>
                     <label class="form-check-label" for="relacao4">
                     Ruim, pouco nos falamos e mal conhecemos os tios da Loja
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="form[relacao]" id="relacao5" value="Pessima" >
+                    <input class="form-check-input" type="radio" name="form[relacao]" id="relacao5" value="Pessima" required>
                     <label class="form-check-label" for="relacao5">
                     Péssima, não temos contato com eles
                     </label>
@@ -211,31 +239,31 @@
               <hr>
                 <label for="form-check-label">A participação do Capítulo na vida da(s) Loja(s) Patrocinadora(s)?</label>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="form[participacao]" id="participacao1" value="Sempre tudo" >
+                    <input class="form-check-input" type="radio" name="form[participacao]" id="participacao1" value="Sempre tudo" required>
                     <label class="form-check-label" for="participacao1">
                       Sempre estamos presentes nas Cerimônias Públicas e nas festas e campanhas da(s) Loja(s)
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="form[participacao]" id="participacao2" value="Apenas Cerimonias" >
+                    <input class="form-check-input" type="radio" name="form[participacao]" id="participacao2" value="Apenas Cerimonias" required>
                     <label class="form-check-label" for="participacao2">
                       Apenas, frequentamos as Cerimônias Públicas da(s) Loja(s)
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="form[participacao]" id="participacao3" value="Apenas festas e Campanhas" >
+                    <input class="form-check-input" type="radio" name="form[participacao]" id="participacao3" value="Apenas festas e Campanhas" required>
                     <label class="form-check-label" for="participacao3">
                     Apenas, participamos das festas e campanhas da(s) Loja(s)
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="form[participacao]" id="participacao4" value="Raramente" >
+                    <input class="form-check-input" type="radio" name="form[participacao]" id="participacao4" value="Raramente" required>
                     <label class="form-check-label" for="participacao4">
                     Vamos raramente em eventos da(s) Loja(s)
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="form[participacao]" id="participacao5" value="Nao temos" >
+                    <input class="form-check-input" type="radio" name="form[participacao]" id="participacao5" value="Nao temos" required>
                     <label class="form-check-label" for="participacao5">
                     Não temos contato com a(s) Loja(s)
                     </label>
@@ -243,25 +271,25 @@
                 <hr>
                 <label for="form-check-label">O Capítulo possui Estatuto e Regimento Interno?</label>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="form[regimento]" id="regimento1" value="Sim, ambos" >
+                    <input class="form-check-input" type="radio" name="form[regimento]" id="regimento1" value="Sim, ambos" required>
                     <label class="form-check-label" for="regimento1">
                       Sim, ambos
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="form[regimento]" id="regimento2" value="Sim, estatuto" >
+                    <input class="form-check-input" type="radio" name="form[regimento]" id="regimento2" value="Sim, estatuto" required>
                     <label class="form-check-label" for="regimento2">
                       Sim, Estatuto
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="form[regimento]" id="regimento3" value="Sim, regimento" >
+                    <input class="form-check-input" type="radio" name="form[regimento]" id="regimento3" value="Sim, regimento" required>
                     <label class="form-check-label" for="regimento3">
                     Sim, Regimento Interno
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="form[regimento]" id="regimento4" value="Nao" >
+                    <input class="form-check-input" type="radio" name="form[regimento]" id="regimento4" value="Nao" required>
                     <label class="form-check-label" for="regimento4">
                     Não possui nenhum dos dois
                     </label>
@@ -270,13 +298,13 @@
                 <label for="form-check-label">O Capítulo sabe da obrigatoriedade de envio do pedido de homologação para o GCE-RJ?</label>
                 <small class="small" id="obrigatorsmall" class="form-text text-muted">(inclusive só é possível dar posse à administrações após homologação do GCE-RJ)</small>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="form[obrigatoriedade]" id="obrigatoriedade1" value="Sim" >
+                    <input class="form-check-input" type="radio" name="form[obrigatoriedade]" id="obrigatoriedade1" value="Sim" required>
                     <label class="form-check-label" for="obrigatoriedade1">
                       Sim
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="form[obrigatoriedade]" id="obrigatoriedade2" value="Nao" >
+                    <input class="form-check-input" type="radio" name="form[obrigatoriedade]" id="obrigatoriedade2" value="Nao" required>
                     <label class="form-check-label" for="obrigatoriedade2">
                       Não, desconhecíamos
                     </label>
@@ -284,37 +312,37 @@
                 <hr>
                 <label for="form-check-label">Qual a Quantidade média de DeMolays ?</label>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="form[quantidade]" id="quantidade1" value="3 a 5" >
+                    <input class="form-check-input" type="radio" name="form[quantidade]" id="quantidade1" value="3 a 5"  required>
                     <label class="form-check-label" for="quantidade1">
                       3 a 5
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="form[quantidade]" id="quantidade2" value="6 a 9">
+                    <input class="form-check-input" type="radio" name="form[quantidade]" id="quantidade2" value="6 a 9" required>
                     <label class="form-check-label" for="quantidade2">
                       6 a 9
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="form[quantidade]" id="quantidade3" value="10 a 13" >
+                    <input class="form-check-input" type="radio" name="form[quantidade]" id="quantidade3" value="10 a 13" required>
                     <label class="form-check-label" for="quantidade3">
                       10 a 13
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="form[quantidade" id="quantidade4" value="14 a 17" >
+                    <input class="form-check-input" type="radio" name="form[quantidade]" id="quantidade4" value="14 a 17" required>
                     <label class="form-check-label" for="quantidade4">
                       14 a 17
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="form[quantidade]" id="quantidade5" value="17 a 20" >
+                    <input class="form-check-input" type="radio" name="form[quantidade]" id="quantidade5" value="17 a 20" required>
                     <label class="form-check-label" for="quantidade5">
                       17 a 20
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="form[quantidade]" id="quantidade6" value="20+" >
+                    <input class="form-check-input" type="radio" name="form[quantidade]" id="quantidade6" value="20+" required>
                     <label class="form-check-label" for="quantidade6">
                       20 ou mais
                     </label>
@@ -322,19 +350,19 @@
                 <hr>
                 <label for="form-check-label">Qual a idade média dos DeMolays Ativos ?</label>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="form[idade]" id="idade1" value="12 a 14" >
+                    <input class="form-check-input" type="radio" name="form[idade]" id="idade1" value="12 a 14"  required>
                     <label class="form-check-label" for="idade1">
                       de 12 a 14 anos
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="form[idade]" id="idade2" value="15 a 18">
+                    <input class="form-check-input" type="radio" name="form[idade]" id="idade2" value="15 a 18" required>
                     <label class="form-check-label" for="idade2">
                       de 15 a 18 anos
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="form[idade]" id="idade3" value="19 a 21" >
+                    <input class="form-check-input" type="radio" name="form[idade]" id="idade3" value="19 a 21" required>
                     <label class="form-check-label" for="idade3">
                       de 19 a 21 anos
                     </label>
@@ -342,25 +370,25 @@
                 <hr>
                 <label for="form-check-label">Quantos membros ativos com menos de 16 anos?</label>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="form[menos16]" id="menos161" value="nenhum" >
+                    <input class="form-check-input" type="radio" name="form[menos16]" id="menos161" value="nenhum" required>
                     <label class="form-check-label" for="menos161">
                       nenhum
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="form[menos16]" id="menos162" value="1 a 3">
+                    <input class="form-check-input" type="radio" name="form[menos16]" id="menos162" value="1 a 3" required>
                     <label class="form-check-label" for="menos162">
                       1 a 3
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="form[menos16]" id="menos163" value="4 a 6" >
+                    <input class="form-check-input" type="radio" name="form[menos16]" id="menos163" value="4 a 6" required>
                     <label class="form-check-label" for="menos163">
                       4 a 6
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="form[menos16]" id="menos164" value="7 ou mais" >
+                    <input class="form-check-input" type="radio" name="form[menos16]" id="menos164" value="7 ou mais" required>
                     <label class="form-check-label" for="menos164">
                       7 ou mais
                     </label>
@@ -368,25 +396,25 @@
                 <hr>
                 <label for="form-check-label">Qual a quantidade média de Maçons presentes nas reuniões?</label>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="form[maconsp]" id="maconsp1" value="Temos problemas para termos maçons em todas as reuniões" >
+                    <input class="form-check-input" type="radio" name="form[maconsp]" id="maconsp1" value="Temos problemas para termos maçons em todas as reuniões" required>
                     <label class="form-check-label" for="maconsp1">
                       Temos problemas para termos maçons em todas as reuniões
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="form[maconsp]" id="maconsp2" value="1 a 3">
+                    <input class="form-check-input" type="radio" name="form[maconsp]" id="maconsp2" value="1 a 3" required>
                     <label class="form-check-label" for="maconsp2">
                       1 a 3
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="form[maconsp]" id="maconsp3" value="4 a 6" >
+                    <input class="form-check-input" type="radio" name="form[maconsp]" id="maconsp3" value="4 a 6" required>
                     <label class="form-check-label" for="maconsp3">
                       4 a 6
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="form[maconsp]" id="maconsp4" value="7 ou mais" >
+                    <input class="form-check-input" type="radio" name="form[maconsp]" id="maconsp4" value="7 ou mais" required>
                     <label class="form-check-label" for="maconsp4">
                       7 ou mais
                     </label>
@@ -394,31 +422,31 @@
                 <hr>
                 <label for="form-check-label">Como o Capítulo avalia seu Conselho Consultivo ?</label>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="form[avcons]" id="avcons1" value="Otimo" >
+                    <input class="form-check-input" type="radio" name="form[avcons]" id="avcons1" value="Otimo" required>
                     <label class="form-check-label" for="avcons1">
                       Ótimo
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="form[avcons]" id="avcons2" value="Bom">
+                    <input class="form-check-input" type="radio" name="form[avcons]" id="avcons2" value="Bom" required>
                     <label class="form-check-label" for="avcons2">
                       Bom
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="form[avcons]" id="avcons3" value="Regular" >
+                    <input class="form-check-input" type="radio" name="form[avcons]" id="avcons3" value="Regular" required>
                     <label class="form-check-label" for="avcons3">
                       Regular
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="form[avcons]" id="avcons4" value="Ruim" >
+                    <input class="form-check-input" type="radio" name="form[avcons]" id="avcons4" value="Ruim" required>
                     <label class="form-check-label" for="avcons4">
                       Ruim
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="form[avcons]" id="avcons5" value="Pessimo" >
+                    <input class="form-check-input" type="radio" name="form[avcons]" id="avcons5" value="Pessimo" required>
                     <label class="form-check-label" for="avcons5">
                       Péssimo
                     </label>
@@ -426,13 +454,13 @@
                 <hr>
                 <label for="form-check-label">No seu capítulo existe alguém que seja o único que sabe fazer uma função ?</label>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="form[unico]" id="unico1" value="Sim" >
+                    <input class="form-check-input" type="radio" name="form[unico]" id="unico1" value="Sim" required>
                     <label class="form-check-label" for="unico1">
                       Sim
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="form[unico]" id="unico2" value="Não">
+                    <input class="form-check-input" type="radio" name="form[unico]" id="unico2" value="Não" required>
                     <label class="form-check-label" for="unico2">
                       Não, todas as funções são bem distribuídas
                     </label>
@@ -440,46 +468,50 @@
                 <hr>
                 <div class="form-group">
                   <label for="exampleFormControlSelect1">De 0 a 10 o quão bem funciona o seu Capítulo sem ajuda ou suporte do GCE/outros Capítulos.?</label>
-                  <select class="form-control" id="exampleFormControlSelect1" name="form[ajuda]">
-                    <option value="0">0</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
+                  <select class="form-control" id="exampleFormControlSelect1" name="form[ajuda]" required>
+                    <option disabled selected="selected">Selecione uma nota</option>
+                    <option value="0" required>0</option>
+                    <option value="1" required>1</option>
+                    <option value="2" required>2</option>
+                    <option value="3" required>3</option>
+                    <option value="4" required>4</option>
+                    <option value="5" required>5</option>
+                    <option value="6" required>6</option>
+                    <option value="7" required>7</option>
+                    <option value="8" required>8</option>
+                    <option value="9" required>9</option>
+                    <option value="10" required>10</option>
                   </select>
                   </div>
                 <hr>
                   <div class="form-group">
                     <label for="comissao">Quais comissões funcionam no Capítulo ?</label>
-                    <input type="text" class="form-control" placeholder="Comissões" name="form[comissao]">
+                    <input type="text" class="form-control" placeholder="Comissões" name="form[comissao]" required>
+                    <div class="invalid-feedback">
+                      Por Favor preencha uma resposta!
+                  </div>
                   </div>
                   <label for="form-check-label">Quando essas Comissões apresentam seus relatórios ao Capítulo?</label>
                   <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="No inicio da gestão" id="relatorio1" name="form[relatorio]">
+                    <input class="form-check-input" type="checkbox" value="No inicio da gestão" id="relatorio1" name="form[relatorio]" >
                     <label class="form-check-label" for="relatorio1">
                       No inicio da gestão
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="No final da gestão" id="relatorio2" name="form[relatorio]">
+                    <input class="form-check-input" type="checkbox" value="No final da gestão" id="relatorio2" name="form[relatorio]" >
                     <label class="form-check-label" for="relatorio2">
                       No final da gestão
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="No meio da gestão" id="relatorio3" name="form[relatorio]">
+                    <input class="form-check-input" type="checkbox" value="No meio da gestão" id="relatorio3" name="form[relatorio]" >
                     <label class="form-check-label" for="relatorio3">
                       No meio da gestão
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="Uma vez, aleatoriamente" id="relatorio4" name="form[relatorio]">
+                    <input class="form-check-input" type="checkbox" value="Uma vez, aleatoriamente" id="relatorio4" name="form[relatorio]" >
                     <label class="form-check-label" for="relatorio4">
                       Uma vez, aleatoriamente
                     </label>
@@ -493,13 +525,13 @@
                   <hr>
                   <label for="form-check-label">O Capítulo possui algum modelo de relatório de Comissão?</label>
                   <div class="form-check">
-                      <input class="form-check-input" type="radio" name="form[modelo]" id="modelo1" value="Sim" >
+                      <input class="form-check-input" type="radio" name="form[modelo]" id="modelo1" value="Sim" required>
                       <label class="form-check-label" for="modelo1">
                         Sim
                       </label>
                   </div>
                   <div class="form-check">
-                      <input class="form-check-input" type="radio" name="form[modelo]" id="modelo2" value="Não">
+                      <input class="form-check-input" type="radio" name="form[modelo]" id="modelo2" value="Não" required>
                       <label class="form-check-label" for="modelo2">
                         Não, todas as funções são bem distribuídas
                       </label>
@@ -507,31 +539,32 @@
                   <hr>
                   <div class="form-group">
                     <label for="exampleFormControlSelect1">Qual a média de reuniões que o Capítulo tem por mês?</label>
-                    <select class="form-control" id="exampleFormControlSelect1" name="form[reunioes]">
-                      <option value="0">0</option>
-                      <option value="1">1</option>
-                      <option value="2">2</option>
-                      <option value="3">3</option>
-                      <option value="4">4</option>
+                    <select class="form-control" id="exampleFormControlSelect1" name="form[reunioes]" required>
+                      <option disabled selected="selected">Escolha um valor</option>
+                      <option value="0" required>0</option>
+                      <option value="1" required>1</option>
+                      <option value="2" required>2</option>
+                      <option value="3" required>3</option>
+                      <option value="4" required>4</option>
                     </select>
                   </div>
                   <hr>
                   <label for="form-check-label">Quanto tempo, em média, o Capítulo gasta no processo de um candidato à iniciação?</label>
                   <small class="small" id="temposmall" class="form-text text-muted">(desde a apresentação dos nomes até a aprovação do candidato no escrutínio)</small>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" value="1 a 2 Semanas" id="tempoinic1" name="form[tempoinic]">
+                    <input class="form-check-input" type="radio" value="1 a 2 Semanas" id="tempoinic1" name="form[tempoinic]" required>
                     <label class="form-check-label" for="tempoinic1">
                       1 a 2 semanas
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" value="3 a 4 semanas" id="tempoinic2" name="form[tempoinic]">
+                    <input class="form-check-input" type="radio" value="3 a 4 semanas" id="tempoinic2" name="form[tempoinic]" required>
                     <label class="form-check-label" for="tempoinic2">
                       3 a 4 semanas
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" value="5 semanas ou mais" id="tempoinic3" name="form[tempoinic]">
+                    <input class="form-check-input" type="radio" value="5 semanas ou mais" id="tempoinic3" name="form[tempoinic]" required>
                     <label class="form-check-label" for="tempoinic3">
                       5 semanas ou mais
                     </label>
@@ -539,25 +572,25 @@
                   <hr>
                   <label for="form-check-label">Quantas iniciações são feitas por semestre?</label>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" value="1" id="inics1" name="form[inics]">
+                    <input class="form-check-input" type="radio" value="1" id="inics1" name="form[inics]" required>
                     <label class="form-check-label" for="inics1">
                       1
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" value="2" id="inics2" name="form[inics]">
+                    <input class="form-check-input" type="radio" value="2" id="inics2" name="form[inics]" required>
                     <label class="form-check-label" for="inics2">
                       2
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" value="3 ou mais" id="inics3" name="form[inics]">
+                    <input class="form-check-input" type="radio" value="3 ou mais" id="inics3" name="form[inics]" required>
                     <label class="form-check-label" for="inics3">
                       3 ou mais
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" value="Estamos com dificuldade para inicar jovens" id="inics4" name="form[inics]">
+                    <input class="form-check-input" type="radio" value="Estamos com dificuldade para inicar jovens" id="inics4" name="form[inics]" required>
                     <label class="form-check-label" for="inics4">
                       Estamos com dificuldades para inicar jovens
                     </label>
@@ -565,37 +598,37 @@
                   <hr>
                   <label for="form-check-label">Média de iniciados por iniciação?</label>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" value="1 a 2" id="iniciados1" name="form[iniciados]">
+                    <input class="form-check-input" type="radio" value="1 a 2" id="iniciados1" name="form[iniciados]" required>
                     <label class="form-check-label" for="iniciados1">
                       1 a 2
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" value="3 a 5" id="iniciados2" name="form[iniciados]">
+                    <input class="form-check-input" type="radio" value="3 a 5" id="iniciados2" name="form[iniciados]" required>
                     <label class="form-check-label" for="iniciados2">
                       3 a 5
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" value="6 a 7" id="iniciados3" name="form[iniciados]">
+                    <input class="form-check-input" type="radio" value="6 a 7" id="iniciados3" name="form[iniciados]" required>
                     <label class="form-check-label" for="iniciados3">
                       6 a 7
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" value="8 a 9" id="iniciados4" name="form[iniciados]">
+                    <input class="form-check-input" type="radio" value="8 a 9" id="iniciados4" name="form[iniciados]" required>
                     <label class="form-check-label" for="iniciados4">
                       8 a 9
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" value="10 ou mais" id="iniciados5" name="form[iniciados]">
+                    <input class="form-check-input" type="radio" value="10 ou mais" id="iniciados5" name="form[iniciados]" required>
                     <label class="form-check-label" for="iniciados5">
                       10 ou mais
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" value="Estamos com dificuldade para inicar jovens" id="iniciados6" name="form[iniciados]">
+                    <input class="form-check-input" type="radio" value="Estamos com dificuldade para inicar jovens" id="iniciados6" name="form[iniciados]" required>
                     <label class="form-check-label" for="iniciados6">
                       Estamos com dificuldade para inicar jovens
                     </label>
@@ -603,37 +636,37 @@
                   <hr>
                   <label for="form-check-label">Quantos eventos beneficentes o Capítulo costuma realizar por ano?</label>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" value="0" id="beneficentes" name="form[beneficentes]">
+                    <input class="form-check-input" type="radio" value="0" id="beneficentes" name="form[beneficentes]" required>
                     <label class="form-check-label" for="beneficentes">
                       Nenhum
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" value="1" id="beneficentes2" name="form[beneficentes]">
+                    <input class="form-check-input" type="radio" value="1" id="beneficentes2" name="form[beneficentes]" required>
                     <label class="form-check-label" for="beneficentes2">
                       1
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" value="2" id="beneficentes3" name="form[beneficentes]">
+                    <input class="form-check-input" type="radio" value="2" id="beneficentes3" name="form[beneficentes]" required>
                     <label class="form-check-label" for="beneficentes3">
                       2
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" value="3" id="beneficentes4" name="form[beneficentes]">
+                    <input class="form-check-input" type="radio" value="3" id="beneficentes4" name="form[beneficentes]" required>
                     <label class="form-check-label" for="beneficentes4">
                       3
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" value="4" id="beneficentes5" name="form[beneficentes]">
+                    <input class="form-check-input" type="radio" value="4" id="beneficentes5" name="form[beneficentes]" required>
                     <label class="form-check-label" for="beneficentes5">
                       4
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" value="5 ou mais" id="beneficentes6" name="form[beneficentes]">
+                    <input class="form-check-input" type="radio" value="5 ou mais" id="beneficentes6" name="form[beneficentes]" required>
                     <label class="form-check-label" for="beneficentes6">
                       5 ou mais
                     </label>
@@ -641,19 +674,19 @@
                   <hr>
                   <label for="form-check-label">São realizadas instruções para os Graus Iniciático? </label>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" value="Sim, sempre" id="instrucoesinic1" name="form[instrucoesinic]">
+                    <input class="form-check-input" type="radio" value="Sim, sempre" id="instrucoesinic1" name="form[instrucoesinic]" required>
                     <label class="form-check-label" for="instrucoesinic1">
                       Sim, sempre
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" value="Sim, as vezes" id="instrucoesinic2" name="form[instrucoesinic]">
+                    <input class="form-check-input" type="radio" value="Sim, as vezes" id="instrucoesinic2" name="form[instrucoesinic]" required>
                     <label class="form-check-label" for="instrucoesinic2">
                       Sim, as vezes
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" value="Não" id="instrucoesinic3" name="form[instrucoesinic]">
+                    <input class="form-check-input" type="radio" value="Não" id="instrucoesinic3" name="form[instrucoesinic]" required>
                     <label class="form-check-label" for="instrucoesinic3">
                       Não
                     </label>
@@ -661,13 +694,13 @@
                   <hr>
                   <label for="form-check-label">O Capítulo possui material próprio para essas instruções?</label>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" value="Sim" id="matinstinic1" name="form[mat_inst_inic]">
+                    <input class="form-check-input" type="radio" value="Sim" id="matinstinic1" name="form[mat_inst_inic]" required>
                     <label class="form-check-label" for="matinstinic1">
                       Sim
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" value="Não" id="matinstinic2" name="form[mat_inst_inic]">
+                    <input class="form-check-input" type="radio" value="Não" id="matinstinic2" name="form[mat_inst_inic]" required>
                     <label class="form-check-label" for="matinstinic2">
                       Não
                     </label>
@@ -675,19 +708,19 @@
                   <hr>
                   <label for="form-check-label">São realizadas instruções para os Graus DeMolay? </label>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" value="Sim, sempre" id="instrucoesdm1" name="form[instrucoesdm]">
+                    <input class="form-check-input" type="radio" value="Sim, sempre" id="instrucoesdm1" name="form[instrucoesdm]" required>
                     <label class="form-check-label" for="instrucoesdm1">
                       Sim, sempre
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" value="Sim, as vezes" id="instrucoesdm2" name="form[instrucoesdm]">
+                    <input class="form-check-input" type="radio" value="Sim, as vezes" id="instrucoesdm2" name="form[instrucoesdm]" required>
                     <label class="form-check-label" for="instrucoesdm2">
                       Sim, as vezes
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" value="Não" id="instrucoesdm3" name="form[instrucoesdm]">
+                    <input class="form-check-input" type="radio" value="Não" id="instrucoesdm3" name="form[instrucoesdm]" required>
                     <label class="form-check-label" for="instrucoesdm3">
                       Não
                     </label>
@@ -695,13 +728,13 @@
                   <hr>
                   <label for="form-check-label">O Capítulo possui material próprio para essas instruções?</label>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" value="Sim" id="matinstDM1" name="form[mat_inst_DM]">
+                    <input class="form-check-input" type="radio" value="Sim" id="matinstDM1" name="form[mat_inst_DM]" required>
                     <label class="form-check-label" for="matinstDM1">
                       Sim
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" value="Não" id="matinstDM2" name="form[mat_inst_DM]">
+                    <input class="form-check-input" type="radio" value="Não" id="matinstDM2" name="form[mat_inst_DM]" required>
                     <label class="form-check-label" for="matinstDM2">
                       Não
                     </label>
@@ -709,25 +742,25 @@
                   <hr>
                   <label for="form-check-label">Existe o costume de praticar ritualística? </label>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" value="Sim, Sempre" id="pratrit1" name="form[pratrit]">
+                    <input class="form-check-input" type="radio" value="Sim, Sempre" id="pratrit1" name="form[pratrit]" required>
                     <label class="form-check-label" for="pratrit1">
                       Sim, Sempre
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" value="Sim, as vezes" id="pratrit2" name="form[pratrit]">
+                    <input class="form-check-input" type="radio" value="Sim, as vezes" id="pratrit2" name="form[pratrit]" required>
                     <label class="form-check-label" for="pratrit2">
                       Sim, as vezes
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" value="Sim, dificilmente" id="pratrit3" name="form[pratrit]">
+                    <input class="form-check-input" type="radio" value="Sim, dificilmente" id="pratrit3" name="form[pratrit]" required>
                     <label class="form-check-label" for="pratrit3">
                       Sim, Dificilmente
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" value="Não" id="pratrit3" name="form[pratrit]">
+                    <input class="form-check-input" type="radio" value="Não" id="pratrit3" name="form[pratrit]" required>
                     <label class="form-check-label" for="pratrit3">
                       Não
                     </label>
@@ -736,31 +769,31 @@
                   <label for="form-check-label">Avaliação da ritualística do Capítulo?</label>
                   <small class="small" id="avritsmall" class="form-text text-muted">Leve em conta se os demolays sabem executar seus cargos perfeitamente e sem precisar do Ritual.</small>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" value="Ótima" id="avrit1" name="form[avrit]">
+                    <input class="form-check-input" type="radio" value="Ótima" id="avrit1" name="form[avrit]" required>
                     <label class="form-check-label" for="avrit1">
                       Ótima
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" value="Boa" id="avrit2" name="form[avrit]">
+                    <input class="form-check-input" type="radio" value="Boa" id="avrit2" name="form[avrit]" required>
                     <label class="form-check-label" for="avrit2">
                       Boa
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" value="Mediana" id="avrit3" name="form[avrit]">
+                    <input class="form-check-input" type="radio" value="Mediana" id="avrit3" name="form[avrit]" required>
                     <label class="form-check-label" for="avrit3">
                       Mediana
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" value="Fraca" id="avrit4" name="form[avrit]">
+                    <input class="form-check-input" type="radio" value="Fraca" id="avrit4" name="form[avrit]" required>
                     <label class="form-check-label" for="avrit4">
                       Fraca
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" value="Pessima" id="avrit5" name="form[avrit]">
+                    <input class="form-check-input" type="radio" value="Pessima" id="avrit5" name="form[avrit]" required>
                     <label class="form-check-label" for="avrit5">
                       Péssima
                     </label>
@@ -769,31 +802,31 @@
                   <label for="form-check-label">Como você avalia as Instruções ritualísticas?  </label>
                   <small class="small" id="avinstrit" class="form-text text-muted">Essa informação ajudará na atuação do Secretário Estadual de Ritualística</small>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" value="Ótima" id="avinst1" name="form[avinst]">
+                    <input class="form-check-input" type="radio" value="Ótima" id="avinst1" name="form[avinst]" required>
                     <label class="form-check-label" for="avinst1">
                       Ótima
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" value="Boa" id="avinst2" name="form[avinst]">
+                    <input class="form-check-input" type="radio" value="Boa" id="avinst2" name="form[avinst]" required>
                     <label class="form-check-label" for="avinst2">
                       Boa
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" value="Ruim" id="avinst3" name="form[avinst]">
+                    <input class="form-check-input" type="radio" value="Ruim" id="avinst3" name="form[avinst]" required>
                     <label class="form-check-label" for="avinst3">
                       Ruim
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" value="Péssima" id="avinst4" name="form[avinst]">
+                    <input class="form-check-input" type="radio" value="Péssima" id="avinst4" name="form[avinst]" required>
                     <label class="form-check-label" for="avinst4">
                      Péssima
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" value="Não temos" id="avinst5" name="form[avinst]">
+                    <input class="form-check-input" type="radio" value="Não temos" id="avinst5" name="form[avinst]" required>
                     <label class="form-check-label" for="avinst5">
                       Não temos
                     </label>
@@ -801,25 +834,25 @@
                   <hr>
                   <label for="form-check-label">O Capítulo possui livro de atas e de presença?</label>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" value="Sim, ambos" id="livros1" name="form[livros]">
+                    <input class="form-check-input" type="radio" value="Sim, ambos" id="livros1" name="form[livros]" required>
                     <label class="form-check-label" for="livros1">
                       Sim, ambos
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" value="Sim, apenas de atas" id="livros2" name="form[livros]">
+                    <input class="form-check-input" type="radio" value="Sim, apenas de atas" id="livros2" name="form[livros]" required>
                     <label class="form-check-label" for="livros2">
                       Sim, apenas de atas
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" value="Sim, apenas de presença" id="livros3" name="form[livros]">
+                    <input class="form-check-input" type="radio" value="Sim, apenas de presença" id="livros3" name="form[livros]" required>
                     <label class="form-check-label" for="livros3">
                       Sim, apenas de presença
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" value="Não" id="livros4" name="form[livros]">
+                    <input class="form-check-input" type="radio" value="Não" id="livros4" name="form[livros]" required>
                     <label class="form-check-label" for="livros4">
                      Não
                     </label>
@@ -827,25 +860,25 @@
                   <hr>
                   <label for="form-check-label">Os arquivos do Capítulo são apenas físicos ou digitais também?</label>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" value="Fisicos" id="arquivos1" name="form[arquivos]">
+                    <input class="form-check-input" type="radio" value="Fisicos" id="arquivos1" name="form[arquivos]" required>
                     <label class="form-check-label" for="arquivos1">
                       Físicos
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" value="Digitais" id="arquivos2" name="form[arquivos]">
+                    <input class="form-check-input" type="radio" value="Digitais" id="arquivos2" name="form[arquivos]" required>
                     <label class="form-check-label" for="arquivos2">
                       Digitais
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" value="Fisicos e Digitais" id="arquivos3" name="form[arquivos]">
+                    <input class="form-check-input" type="radio" value="Fisicos e Digitais" id="arquivos3" name="form[arquivos]" required>
                     <label class="form-check-label" for="arquivos3">
                       Físicos e Digitais
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" value="Não possui" id="arquivos4" name="form[arquivos]">
+                    <input class="form-check-input" type="radio" value="Não possui" id="arquivos4" name="form[arquivos]" required>
                     <label class="form-check-label" for="arquivos4">
                      O Capítulo não possui arquivos
                     </label>
@@ -853,31 +886,31 @@
                   <hr>
                   <label for="form-check-label">O Capítulo realiza prestação de contas, de forma pública para os irmãos?</label>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" value="Anualmente" id="prestacao1" name="form[prestacao]">
+                    <input class="form-check-input" type="radio" value="Anualmente" id="prestacao1" name="form[prestacao]" required>
                     <label class="form-check-label" for="prestacao1">
                       Anualmente
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" value="Semestralmente" id="prestacao2" name="form[prestacao]">
+                    <input class="form-check-input" type="radio" value="Semestralmente" id="prestacao2" name="form[prestacao]" required>
                     <label class="form-check-label" for="prestacao2">
                       Semestralmente
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" value="Mensalmente" id="prestacao3" name="form[prestacao]">
+                    <input class="form-check-input" type="radio" value="Mensalmente" id="prestacao3" name="form[prestacao]" required>
                     <label class="form-check-label" for="prestacao3">
                       Mensalmente
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" value="Somente informa nas reunioes" id="prestacao4" name="form[prestacao]">
+                    <input class="form-check-input" type="radio" value="Somente informa nas reunioes" id="prestacao4" name="form[prestacao]" required>
                     <label class="form-check-label" for="prestacao4">
                      Somente informa o caixa nas reuniões
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" value="Não realiza esclarecimento" id="prestacao5" name="form[prestacao]">
+                    <input class="form-check-input" type="radio" value="Não realiza esclarecimento" id="prestacao5" name="form[prestacao]" required>
                     <label class="form-check-label" for="prestacao5">
                      Não realiza nenhum tipo de esclarecimento
                     </label>
@@ -885,13 +918,13 @@
                   <hr>
                   <label for="form-check-label">O Capítulo possui mensalidade?</label>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" value="Sim" id="mensalidade1" name="form[mensalidade]">
+                    <input class="form-check-input" type="radio" value="Sim" id="mensalidade1" name="form[mensalidade]" required>
                     <label class="form-check-label" for="mensalidade1">
                       Sim
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" value="Não" id="mensalidade2" name="form[mensalidade]">
+                    <input class="form-check-input" type="radio" value="Não" id="mensalidade2" name="form[mensalidade]" required>
                     <label class="form-check-label" for="mensalidade2">
                       Não
                     </label>
@@ -899,25 +932,25 @@
                   <hr>
                   <label for="form-check-label">Seu Capítulo conhece a Ordem da Távola dos Escudeiros? </label>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" value="Sim, muito bem" id="conhecetavola1" name="form[conhecetavola]">
+                    <input class="form-check-input" type="radio" value="Sim, muito bem" id="conhecetavola1" name="form[conhecetavola]" required>
                     <label class="form-check-label" for="conhecetavola1">
                       Sim, muito bem
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" value="Sim, pouco" id="conhecetavola2" name="form[conhecetavola]">
+                    <input class="form-check-input" type="radio" value="Sim, pouco" id="conhecetavola2" name="form[conhecetavola]" required>
                     <label class="form-check-label" for="conhecetavola2">
                       Sim, pouco
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" value="Sim, mas só ouvimos falar" id="conhecetavola3" name="form[conhecetavola]">
+                    <input class="form-check-input" type="radio" value="Sim, mas só ouvimos falar" id="conhecetavola3" name="form[conhecetavola]" required>
                     <label class="form-check-label" for="conhecetavola3">
                       Sim, mas só ouvimos falar
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" value="Não" id="conhecetavola4" name="form[conhecetavola]">
+                    <input class="form-check-input" type="radio" value="Não" id="conhecetavola4" name="form[conhecetavola]" required>
                     <label class="form-check-label" for="conhecetavola4">
                      Não
                     </label>
@@ -925,13 +958,13 @@
                   <hr>
                   <label for="form-check-label">Tem interesse em conhecer mais da Távola dos Escudeiros?? </label>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" value="Sim" id="interessetavola1" name="form[interessetavola]">
+                    <input class="form-check-input" type="radio" value="Sim" id="interessetavola1" name="form[interessetavola]" required>
                     <label class="form-check-label" for="interessetavola1">
                       Sim
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" value="Não" id="interessetavola2" name="form[interessetavola]">
+                    <input class="form-check-input" type="radio" value="Não" id="interessetavola2" name="form[interessetavola]" required>
                     <label class="form-check-label" for="interessetavola2">
                       Não
                     </label>
@@ -939,13 +972,13 @@
                   <hr>
                   <label for="form-check-label">Tem interesse em Patrocinar uma Távola dos Escudeiros?</label>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" value="Sim" id="patrocinartavola1" name="form[patrocinartavola]">
+                    <input class="form-check-input" type="radio" value="Sim" id="patrocinartavola1" name="form[patrocinartavola]" required>
                     <label class="form-check-label" for="patrocinartavola1">
                       Sim
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" value="Não" id="patrocinartavola2" name="form[patrocinartavola]">
+                    <input class="form-check-input" type="radio" value="Não" id="patrocinartavola2" name="form[patrocinartavola]" required>
                     <label class="form-check-label" for="patrocinartavola2">
                       Não
                     </label>
@@ -953,29 +986,33 @@
                   <hr>
                   <div class="form-group">
                     <label for="exampleFormControlSelect1">Qual Convento seu Capítulo é filiado? </label>
-                    <select class="form-control" id="exampleFormControlSelect1" name="form[conventos]">
-                      <option value="1 - SIR PERCIVAL DE GALES">1 - SIR PERCIVAL DE GALES</option>
-                      <option value="10 - SIR GALAHAD">10 - SIR GALAHAD</option>
-                      <option value="27 - SIR ARTHUR - O PENDRAGON">27 - SIR ARTHUR - O PENDRAGON</option>
-                      <option value="68 - MERLIN TALIESIN">68 - MERLIN TALIESIN</option>
-                      <option value="78 - AGUIA BRANCA E NEGRA">78 - AGUIA BRANCA E NEGRA</option>
+                    <select class="form-control" id="exampleFormControlSelect1" name="form[conventos]" required>
+                      <option disabled selected="selected">Escolha Seu Convento</option>
+                      <option value="1 - SIR PERCIVAL DE GALES" required>1 - SIR PERCIVAL DE GALES</option>
+                      <option value="10 - SIR GALAHAD" required>10 - SIR GALAHAD</option>
+                      <option value="27 - SIR ARTHUR - O PENDRAGON" required>27 - SIR ARTHUR - O PENDRAGON</option>
+                      <option value="68 - MERLIN TALIESIN" required>68 - MERLIN TALIESIN</option>
+                      <option value="78 - AGUIA BRANCA E NEGRA" required>78 - AGUIA BRANCA E NEGRA</option>
                       <option value="96 - GODOFREDO DE SAINT OMER">96 - GODOFREDO DE SAINT OMER</option>
-                      <option value="119 - FRATERNIDADE TEMPLÁRIA">119 - FRATERNIDADE TEMPLÁRIA</option>
-                      <option value="141 - SOBERANO GRANDE COMENDADOR NEY COELHO SOARES">141 - SOBERANO GRANDE COMENDADOR NEY COELHO SOARES</option>
-                      <option value="142 - SIR BEDIVERE">142 - SIR BEDIVERE</option>
-                      <option value="143 - SIR ROBERT BRUCE DA ESCÓCIA">143 - SIR ROBERT BRUCE DA ESCÓCIA</option>
+                      <option value="119 - FRATERNIDADE TEMPLÁRIA" required>119 - FRATERNIDADE TEMPLÁRIA</option>
+                      <option value="141 - SOBERANO GRANDE COMENDADOR NEY COELHO SOARES" required>141 - SOBERANO GRANDE COMENDADOR NEY COELHO SOARES</option>
+                      <option value="142 - SIR BEDIVERE" required>142 - SIR BEDIVERE</option>
+                      <option value="143 - SIR ROBERT BRUCE DA ESCÓCIA" required>143 - SIR ROBERT BRUCE DA ESCÓCIA</option>
                     </select>
+                    <div class="invalid-feedback">
+                      Por Favor preencha uma resposta!
+                  </div>
                   </div>
                   <hr>
                   <label for="form-check-label">Seu Capítulo possui Cavaleiros ativos e freqüentes no Convento ao qual está circunscrito?</label>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" value="Sim" id="cavativos1" name="form[cavativos]">
+                    <input class="form-check-input" type="radio" value="Sim" id="cavativos1" name="form[cavativos]" required>
                     <label class="form-check-label" for="cavativos1">
                       Sim
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" value="Não" id="cavativos2" name="form[cavativos]">
+                    <input class="form-check-input" type="radio" value="Não" id="cavativos2" name="form[cavativos]" required>
                     <label class="form-check-label" for="cavativos2">
                       Não
                     </label>
@@ -983,13 +1020,13 @@
                   <hr>
                   <label for="form-check-label">Existem muitos DeMolays com requisitos para serem Cavaleiros, que desejam ser e não são?</label>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" value="Sim" id="cavreq1" name="form[cavreq]">
+                    <input class="form-check-input" type="radio" value="Sim" id="cavreq1" name="form[cavreq]" required>
                     <label class="form-check-label" for="cavreq1">
                       Sim
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" value="Não" id="cavreq2" name="form[cavreq]">
+                    <input class="form-check-input" type="radio" value="Não" id="cavreq2" name="form[cavreq]" required>
                     <label class="form-check-label" for="cavreq2">
                       Não
                     </label>
@@ -1023,13 +1060,13 @@
                   <hr>
                   <label for="form-check-label">Os Cavaleiros que pertencem ao seu Capítulo incentivam os DeMolays a participarem da Ordem da Cavalaria, levam fichas para indicá-los e explicam sobre ela?</label>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" value="Sim" id="cavincen1" name="form[cavincen]">
+                    <input class="form-check-input" type="radio" value="Sim" id="cavincen1" name="form[cavincen]" required>
                     <label class="form-check-label" for="cavincen1">
                       Sim
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" value="Não" id="cavincen2" name="form[cavincen]">
+                    <input class="form-check-input" type="radio" value="Não" id="cavincen2" name="form[cavincen]" required>
                     <label class="form-check-label" for="cavincen2">
                       Não
                     </label>
@@ -1037,31 +1074,31 @@
                   <hr>
                   <label for="form-check-label">Como é o relacionamento entre o Capítulo e o Convento?</label>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" value="Ótima" id="relacao_conv1" name="form[relacao_conv]">
+                    <input class="form-check-input" type="radio" value="Ótima" id="relacao_conv1" name="form[relacao_conv]" required>
                     <label class="form-check-label" for="relacao_conv1">
                       Ótima
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" value="Boa" id="relacao_conv2" name="form[relacao_conv]">
+                    <input class="form-check-input" type="radio" value="Boa" id="relacao_conv2" name="form[relacao_conv]" required>
                     <label class="form-check-label" for="relacao_conv2">
                       Boa
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" value="Mediana" id="relacao_conv3" name="form[relacao_conv]">
+                    <input class="form-check-input" type="radio" value="Mediana" id="relacao_conv3" name="form[relacao_conv]" required>
                     <label class="form-check-label" for="relacao_conv3">
                       Mediana
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" value="Ruim" id="relacao_conv4" name="form[relacao_conv]">
+                    <input class="form-check-input" type="radio" value="Ruim" id="relacao_conv4" name="form[relacao_conv]" required>
                     <label class="form-check-label" for="relacao_conv4">
                       Ruim
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" value="Pessima" id="relacao_conv5" name="form[relacao_conv]">
+                    <input class="form-check-input" type="radio" value="Pessima" id="relacao_conv5" name="form[relacao_conv]" required>
                     <label class="form-check-label" for="relacao_conv5">
                       Péssima
                     </label>
@@ -1069,13 +1106,13 @@
                   <hr>
                   <label for="form-check-label">O ICC já visitou o Capítulo de vocês?</label>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" value="Sim" id="icc_visit1" name="form[icc_visit]">
+                    <input class="form-check-input" type="radio" value="Sim" id="icc_visit1" name="form[icc_visit]" required>
                     <label class="form-check-label" for="icc_visit1">
                       Sim
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" value="Não" id="icc_visit2" name="form[icc_visit]">
+                    <input class="form-check-input" type="radio" value="Não" id="icc_visit2" name="form[icc_visit]" required>
                     <label class="form-check-label" for="icc_visit2">
                       Não
                     </label>
@@ -1109,19 +1146,19 @@
                   <hr>
                   <label for="form-check-label">Existem problemas para receber CIDs?</label>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" value="Sim, Sempre" id="rec_cid1" name="form[rec_cid]">
+                    <input class="form-check-input" type="radio" value="Sim, Sempre" id="rec_cid1" name="form[rec_cid]" required>
                     <label class="form-check-label" for="rec_cid1">
                       Sim, sempre
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" value="Sim, as vezes" id="rec_cid2" name="form[rec_cid]">
+                    <input class="form-check-input" type="radio" value="Sim, as vezes" id="rec_cid2" name="form[rec_cid]" required>
                     <label class="form-check-label" for="rec_cid2">
                       Sim, as vezes
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" value="Não" id="rec_cid3" name="form[rec_cid]">
+                    <input class="form-check-input" type="radio" value="Não" id="rec_cid3" name="form[rec_cid]" required>
                     <label class="form-check-label" for="rec_cid3">
                       Não, nunca
                     </label>
@@ -1129,25 +1166,25 @@
                   <hr>
                   <label for="form-check-label">Como você avalia a evasão dos membros do Capítulo: </label>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" value="Muito alta, 70% dos iniciados se afastam" id="evasao1" name="form[evasao]">
+                    <input class="form-check-input" type="radio" value="Muito alta, 70% dos iniciados se afastam" id="evasao1" name="form[evasao]" required>
                     <label class="form-check-label" for="evasao1">
                       Muito alta, 70% dos iniciados se afastam
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" value="Alta, 50% dos iniciados se afastam" id="evasao2" name="form[evasao]">
+                    <input class="form-check-input" type="radio" value="Alta, 50% dos iniciados se afastam" id="evasao2" name="form[evasao]" required>
                     <label class="form-check-label" for="evasao2">
                       Alta, 50% dos iniciados se afastam
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" value="Mediana, 30 % dos iniciados se afastam" id="evasao3" name="form[evasao]">
+                    <input class="form-check-input" type="radio" value="Mediana, 30 % dos iniciados se afastam" id="evasao3" name="form[evasao]" required>
                     <label class="form-check-label" for="evasao3">
                       Mediana, 30 % dos iniciados se afastam
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" value="Baixa, 10% dos iniciados se afastam" id="evasao4" name="form[evasao]">
+                    <input class="form-check-input" type="radio" value="Baixa, 10% dos iniciados se afastam" id="evasao4" name="form[evasao]" required>
                     <label class="form-check-label" for="evasao4">
                       Baixa, 10% dos iniciados se afastam
                     </label>
@@ -1156,30 +1193,33 @@
                   <div class="form-group">
                     <label for="cidade">Qual o motivo do afastamento? </label>
                     <small class="small" id="motivafastsmall" class="form-text text-muted">Cite todos os fatos que acredite ser motivo de evasão de membros.</small>
-                    <input type="text" class="form-control"  placeholder="Motivos" name="form[motiv_afast]">
+                    <input type="text" class="form-control"  placeholder="Motivos" name="form[motiv_afast]" required>
+                    <div class="invalid-feedback">
+                      Por Favor preencha pelo menos um motivo!
+                  </div>
                   </div>
                   <hr>
                   <label for="form-check-label">Com frequência acontecem palestras, dinâmicas ou treinamento sobre liderança no Capítulo?</label>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" value="1 vez por Gestão" id="atividades1" name="form[atividades]">
+                    <input class="form-check-input" type="radio" value="1 vez por Gestão" id="atividades1" name="form[atividades]" required>
                     <label class="form-check-label" for="atividades1">
                       1 vez por Gestão
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" value="2 vezes por Gestão" id="atividades2" name="form[atividades]">
+                    <input class="form-check-input" type="radio" value="2 vezes por Gestão" id="atividades2" name="form[atividades]" required>
                     <label class="form-check-label" for="atividades2">
                       2 vezes por Gestão
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" value="3 vezes por Gestão" id="atividades3" name="form[atividades]">
+                    <input class="form-check-input" type="radio" value="3 vezes por Gestão" id="atividades3" name="form[atividades]" required>
                     <label class="form-check-label" for="atividades3">
                       3 vezes por Gestão
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" value="Não há esses tipos de atividades" id="atividades4" name="form[atividades]">
+                    <input class="form-check-input" type="radio" value="Não há esses tipos de atividades" id="atividades4" name="form[atividades]" required>
                     <label class="form-check-label" for="atividades4">
                       Não há esses tipos de atividades
                     </label>
@@ -1188,18 +1228,21 @@
                   <div class="form-group">
                     <label for="cidade">Quais temas chamam a atenção dos membros do Capítulo?</label>
                     <small  class="small" id="temassmall" class="form-text text-muted">(fique livre para citá-los todos)</small>
-                    <input type="text" class="form-control"  placeholder="Liste Todos.." name="form[temas]">
+                    <input type="text" class="form-control"  placeholder="Liste Todos.." name="form[temas]" required>
+                    <div class="invalid-feedback">
+                      Por Favor preencha uma resposta!
+                  </div>
                   </div>
                   <hr>
                   <label for="form-check-label">É interesse do Capítulo participar de treinamentos?</label>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" value="Sim" id="int_treinamentos1" name="form[int_treinamentos]">
+                    <input class="form-check-input" type="radio" value="Sim" id="int_treinamentos1" name="form[int_treinamentos]" required>
                     <label class="form-check-label" for="int_treinamentos1">
                       Sim
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" value="Não" id="int_treinamentos2" name="form[int_treinamentos]">
+                    <input class="form-check-input" type="radio" value="Não" id="int_treinamentos2" name="form[int_treinamentos]" required>
                     <label class="form-check-label" for="int_treinamentos2">
                       Não
                     </label>
@@ -1207,37 +1250,37 @@
                   <hr>
                   <div class="form-group">
                     <label for="cidade">Nesse treinamento: Quais áreas devemos enfatizar? </label>
-                    <input type="text" class="form-control"  placeholder="Areas..." name="form[area_treinamentos]">
+                    <input type="text" class="form-control"  placeholder="Areas..." name="form[area_treinamentos]" required>
                   </div>
                   <hr>
                   <label for="form-check-label">Como pode ser avaliada a habilidade de gestão do Capítulo?</label>
                   <small class="small" id="habilsmall" class="form-text text-muted">Levando em conta a motivação dos membros, a realização de projetos e iniciativas</small>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" value="Ótima" id="habil_gestao1" name="form[habil_gestao]">
+                    <input class="form-check-input" type="radio" value="Ótima" id="habil_gestao1" name="form[habil_gestao]" required>
                     <label class="form-check-label" for="habil_gestao1">
                       Ótima
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" value="Boa" id="habil_gestao2" name="form[habil_gestao]">
+                    <input class="form-check-input" type="radio" value="Boa" id="habil_gestao2" name="form[habil_gestao]" required>
                     <label class="form-check-label" for="habil_gestao2">
                       Boa
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" value="Mediana" id="habil_gestao3" name="form[habil_gestao]">
+                    <input class="form-check-input" type="radio" value="Mediana" id="habil_gestao3" name="form[habil_gestao]" required>
                     <label class="form-check-label" for="habil_gestao3">
                       Mediana
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" value="Ruim" id="habil_gestao4" name="form[habil_gestao]">
+                    <input class="form-check-input" type="radio" value="Ruim" id="habil_gestao4" name="form[habil_gestao]" required>
                     <label class="form-check-label" for="habil_gestao4">
                       Ruim
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" value="Pessima" id="habil_gestao5" name="form[habil_gestao]">
+                    <input class="form-check-input" type="radio" value="Pessima" id="habil_gestao5" name="form[habil_gestao]" required>
                     <label class="form-check-label" for="habil_gestao5">
                       Péssima
                     </label>
@@ -1246,13 +1289,19 @@
                   <div class="form-group">
                     <label for="cidade">Quais áreas vocês mais precisariam melhorar?</label>
                     <small class="small"form[ id="areassmall" class="form-text text-muted">Podendo ser, por exemplo, na área administrativa, na gestão de comissões, no estudo e prática ritualística, organização interna, motivação, permanência de membros, todo e qualquer problema vivenciado pelo Capítulo. </small>
-                    <input type="text" class="form-control"  placeholder="Areas..." name="form[areas_melhorar]">
+                    <input type="text" class="form-control"  placeholder="Areas..." name="form[areas_melhorar]" required>
+                    <div class="invalid-feedback">
+                      Por Favor preencha uma resposta!
+                  </div>
                   </div>
                   <hr>
                   <div class="form-group">
                     <label for="cidade">Como as lideranças juvenis e adultas da Ordem DeMolay podem ajudar o Capítulo?</label>
                     <small class="small" id="ajudasmall" class="form-text text-muted">Fiquem livres para apontar ideias, projetos e modo de trabalho</small>
-                    <input type="text" class="form-control"  placeholder="Digite.." name="form[como_ajudar]">
+                    <input type="text" class="form-control"  placeholder="Digite.." name="form[como_ajudar]" required>
+                    <div class="invalid-feedback">
+                      Por Favor preencha uma resposta!
+                  </div>
                   </div>
                   <hr>
                   <input class="btn btn-primary" type="submit" value="Enviar">
@@ -1260,4 +1309,26 @@
 </div>
 </div>
 </div>
+
+<script>
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+</script>
+
             <% include partials/footer %>

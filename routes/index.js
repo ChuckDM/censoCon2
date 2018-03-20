@@ -11,6 +11,9 @@ router.get('/',function(req,res){
 router.get('/register', function(req,res){
   res.render('register');
 })
+router.get('/privacy', function(req,res){
+  res.render('privacy');
+});
 
 router.post('/register', function(req,res){
   var newUser =new User({username:req.body.username});
@@ -29,6 +32,32 @@ router.get('/login', function(req,res){
   res.render('login')
 });
 
+
+//Google Routes
+router.get('/auth/google', passport.authenticate('google', {
+  scope: ['profile']
+}));
+
+
+//Callback Route for Google
+router.get('/auth/google/redirect', passport.authenticate('google'), (req,res) => {
+  req.flash("success", "Seja Bem Vindo !");
+  res.redirect('/form')
+} );
+//End Google ROutes
+
+//Facebook Routes
+router.get('/auth/facebook',
+  passport.authenticate('facebook'));
+
+router.get('/auth/facebook/callback',
+  passport.authenticate('facebook', { failureRedirect: '/login', failureFlash: 'Algo deu errado!' }),
+  function(req, res) {
+    // Successful authentication, redirect home.
+    res.redirect('/form');
+  });
+//End Facebook Routes
+
 router.post('/login',passport.authenticate('local',
 {
   successRedirect: '/form',
@@ -37,6 +66,7 @@ router.post('/login',passport.authenticate('local',
 
 router.get('/logout', function(req,res){
   req.logout();
+  req.flash("success", "Você saiu!")
   res.redirect('/')
 })
 
@@ -46,6 +76,7 @@ function isLoggedIn(req,res,next){
   if(req.isAuthenticated()){
     return next();
   }
+  req.flash("error", "Por Favor entre primeiro!");
   res.redirect('/login');
 };
 

@@ -83,6 +83,9 @@ h1 {
 									   color-stop(0.72, rgb(73,125,189)),
 									   color-stop(0.86, rgb(28,58,148)));
 }
+.form-check-input.is-valid ~ .form-check-label, .was-validated .form-check-input:valid ~ .form-check-label{
+  color: #4ef442 !important;
+}
 
 .small{
   color:white;
@@ -180,4 +183,7 @@ hr.style-seven { overflow: visible; /* For IE */ height: 30px; border-style: sol
 }
 .sobreContent h1 {
   text-align: center;
+}
+.flash {
+  margin-top: 20px;
 }
