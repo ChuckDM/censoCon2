@@ -14,6 +14,9 @@ router.get('/register', function(req,res){
 router.get('/privacy', function(req,res){
   res.render('privacy');
 });
+router.get('/sobre', function(req,res){
+  res.render('sobre');
+});
 
 router.post('/register', function(req,res){
   var newUser =new User({username:req.body.username});

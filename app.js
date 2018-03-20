@@ -10,13 +10,7 @@ var GoogleStrategy = require('passport-google-oauth20').Strategy;
 var keys = require("./keys.js")
 var FacebookStrategy = require('passport-facebook').Strategy;
 var flash = require('connect-flash');
-var https = require('https');
-var fs = require('fs');
-var sslOptions = {
-  key: fs.readFileSync('key.pem'),
-  cert: fs.readFileSync('cert.pem'),
-  passphrase: keys.ssl.passphrase
-};
+
 
 var indexRoutes = require('./routes/index');
 var formRoutes = require('./routes/form');
@@ -57,7 +51,7 @@ passport.use(new GoogleStrategy({
 passport.use(new FacebookStrategy({
     clientID: keys.facebook.clientID,
     clientSecret: keys.facebook.clientSecret,
-    callbackURL: "http://localhost:3000/auth/facebook/callback"
+    callbackURL: "/auth/facebook/callback"
   },
   function(accessToken, refreshToken, profile, cb) {
     User.findOrCreate({ facebookId: profile.id }, function (err, user) {
@@ -71,7 +65,7 @@ passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
 
 //Mongoose Connect
-mongoose.connect('mongodb://localhost/censodm');
+mongoose.connect('process.env.DATABASE_URL');
 
 //View Engine and Static Folder
 app.set('view engine', 'ejs');
@@ -94,11 +88,11 @@ app.use(indexRoutes);
 app.get('*', function(req,res){
   res.render('notfound');
 });
-var port = 3000;
+var port = process.env.PORT || 5000;
 
 
-var httpsServer = https.createServer(sslOptions, app);
 
-httpsServer.listen(port,function(){
-    console.log('Our app is running on http://localhost:' + port);
+
+app.listen(port,function(){
+    console.log('Our app is running on ' + port);
 })
