@@ -11,6 +11,15 @@ var FacebookStrategy = require('passport-facebook').Strategy;
 var flash = require('connect-flash');
 
 
+
+/* Redirect http to https */
+app.get('*', function(req,res,next) {
+  if(req.headers['x-forwarded-proto'] != 'https' && process.env.NODE_ENV === 'production')
+    res.redirect('https://'+req.hostname+req.url)
+  else
+    next() /* Continue to other routes if we're not redirecting */
+});
+
 var indexRoutes = require('./routes/index');
 var formRoutes = require('./routes/form');
 
