@@ -69,7 +69,7 @@ passport.use(new FacebookStrategy({
       });
       }
     })
-));
+}));
 
 passport.use(new LocalStrategy(User.authenticate()));
 passport.serializeUser(User.serializeUser());
