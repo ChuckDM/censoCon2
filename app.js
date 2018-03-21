@@ -54,15 +54,15 @@ passport.use(new FacebookStrategy({
   clientSecret: process.env.faceClientSecret
 }, (accessToken, refreshToken, profile, done) => {
   User.findOne({facebookId: profile.id}).then((currentUser) => {
+    console.log("Entered FindONe");
     if(currentUser){
-      console.log(currentUser);
       done(null,currentUser);
     } else {
       new User({
         username: profile.displayName,
         facebookId: profile.id
       }).save().then((newUser) => {
-        console.log("New User created!" + newUser);
+        console.log("GOT HERE! before done()");
         done(null, newUser);
     });
     }
