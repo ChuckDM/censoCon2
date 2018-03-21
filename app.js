@@ -49,7 +49,7 @@ passport.use(new GoogleStrategy({
 })
 )
 passport.use(new FacebookStrategy({
-  callbackURL: "/auth/facebook/redirect",
+  callbackURL: "/auth/facebook/callback",
   clientID: process.env.faceClientId,
   clientSecret: process.env.faceClientSecret
 }, (accessToken, refreshToken, profile, done) => {
