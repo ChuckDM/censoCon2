@@ -21,6 +21,7 @@ app.use(require('express-session')({
   saveUninitialized: false
 }));
 //Passport Init
+app.enable("trust proxy");
 app.use(passport.initialize());
 app.use(passport.session());
 app.use(flash());

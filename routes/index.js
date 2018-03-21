@@ -8,9 +8,7 @@ router.get('/',function(req,res){
 });
 
 //AUTH ROUTES
-router.get('/register', function(req,res){
-  res.render('register');
-})
+
 router.get('/privacy', function(req,res){
   res.render('privacy');
 });
@@ -18,18 +16,7 @@ router.get('/sobre', function(req,res){
   res.render('sobre');
 });
 
-router.post('/register', function(req,res){
-  var newUser =new User({username:req.body.username});
-  User.register(newUser, req.body.password, function(err,user){
-    if(err){
-      console.log(err);
-      return res.render('register');
-    }
-    passport.authenticate('local')(req,res, function(){
-      res.redirect('/form');
-    });
-  });
-});
+
 
 router.get('/login', function(req,res){
   res.render('login')
