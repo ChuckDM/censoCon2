@@ -49,27 +49,26 @@ passport.use(new GoogleStrategy({
 })
 )
 passport.use(new FacebookStrategy({
-    clientID: process.env.faceClientId,
-    clientSecret: process.env.faceClientSecret,
-    callbackURL: "/auth/facebook/callback"
-  },
-  function(accessToken, refreshToken, profile, cb) {
-    console.log(profile);
-    User.findOne({facebookId: profile.id}).then((currentUser) => {
-      if(currentUser){
-        console.log(currentUser);
-        done(null,currentUser);
-      } else {
-        new User({
-          username: profile.displayName,
-          facebookId: profile.id
-        }).save().then((newUser) => {
-          console.log("New User created!" + newUser);
-          done(null, newUser);
-      });
-      }
-    })
-}));
+  callbackURL: "/auth/facebook/redirect",
+  clientID: process.env.faceClientId,
+  clientSecret: process.env.faceClientSecret
+}, (accessToken, refreshToken, profile, done) => {
+  User.findOne({facebookId: profile.id}).then((currentUser) => {
+    if(currentUser){
+      console.log(currentUser);
+      done(null,currentUser);
+    } else {
+      new User({
+        username: profile.displayName,
+        facebookId: profile.id
+      }).save().then((newUser) => {
+        console.log("New User created!" + newUser);
+        done(null, newUser);
+    });
+    }
+  })
+})
+)
 
 passport.use(new LocalStrategy(User.authenticate()));
 passport.serializeUser(User.serializeUser());
